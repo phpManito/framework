@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+</head>
+<body>
+{$data1}
+<br/>
+<if condition="$data2['sex'] eq '男'">
+    强大
+    <else />
+    需要保护
+</if>
+<br/>
+<foreach name="data3"  key="k" item="v" >
+    {$k}__{$v.name}__{$v.age} __{$v.sex}<br />
+</foreach>
+</body>
+</html>
